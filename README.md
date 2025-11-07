@@ -1,48 +1,50 @@
-# Smart-Traffic-Management-System
-IoT-based AI Traffic Signal Optimization using Python and ML
-🚦 IoT based Smart Traffic Management System
+🚦 Smart Traffic Management System (IoT + AI)
+An intelligent traffic control system that uses IoT sensor simulation and Machine Learning to dynamically adjust signal timings based on live vehicle density.
+This project demonstrates how AI can help reduce traffic congestion, optimize green light duration, and enhance road safety.
 
-💡 Project Overview
-The IoT and Machine Learning Smart Traffic Management System orchestrates dynamic control of light signal timings based on real-time vehicle data.
-This system predicts optimal green light durations to minimize congestion and waiting — introducing intelligence into urban traffic flow.
+🌐 Live Demo
+👉 https://smart-traffic.streamlit.app/
 
 🧠 Key Features
-🔗 IoT Data Integration: Mock sensor inputs for the number of vehicles at an intersection.
-🤖 Machine Learning Prediction: Utilizes a linear regression model to predict optimal signal timing.
-📊 Dynamic Decision Logic: Dynamically modifies the traffic signal duration according to the level of congestion.
-- 💬 Interpretable Recommendations: Offers explicit recommendations such as
-“Low Traffic → Keep default 20s” or “High Traffic → Delay clearance”.
-🧹 Warning-Free Model: Fully adapted to avoid sklearn feature mismatching
+Simulates IoT sensors for 4 traffic lanes.
+Predicts optimal green-signal time using regression-based ML.
+Dynamic UI built with Streamlit.
+Simple, modular, and production-ready Python structure.
+Real-time vehicle input via sliders and visual output.
+Fast runtime with minimal dependencies.
 
-⚙️ Tech Stack
-| Component          | Technology                     |
-| ------------------ | ------------------------------ |
-| Language           | Python 3.10                    |
-| ML Framework       | scikit-learn                   |
-| Data Handling      | Pandas, NumPy                  |
-| Visualization      | Matplotlib                     |
-| IDE                | Google Colab                   |
-| Hosting (optional) | Streamlit Cloud / GitHub Pages |
+🛠 Tech Stack
+| Category       | Tools / Frameworks            |
+| -------------- | ----------------------------- |
+| Language       | Python 3.x                    |
+| Front-End      | Streamlit                     |
+| AI / ML        | scikit-learn                  |
+| Visualization  | Matplotlib                    |
+| IoT Simulation | Randomized Sensor Data        |
+| Deployment     | Streamlit Cloud / LocalTunnel |
 
-🧩 Project Workflow
-Simulated Data: Simulate lane-based vehicle counts.
-Model Training: Train a linear regression model on the mean vehicle count and signal time.
-IoT Integration: Simulate reading sensor data and feeding it to the model.
-Decision Logic: Classify traffic as Low, Moderate, or High.
-Output: Display suggested signal duration in real time.
+📂 Project Structure
+├── smart_traffic_app.py      # Main Streamlit web app
+├── requirements.txt          # Dependencies
+├── README.md                 # Documentation
 
-📈 Sample Output
-Avg Vehicles: 25 → Low Traffic → Keep default 20s
-Avg Vehicles: 55 → Moderate Traffic → Extend green to 36.4s
-Avg Vehicles: 95 → High Traffic → Delay clearance, green ~ 49.0s
+⚙️ Installation & Setup
+git clone https://github.com/Siddu123421/Smart-Traffic-Management-System.git
+cd Smart-Traffic-Management-System
 
-🧰 Installation & Usage
-# Clone this project
-git clone https://github.com/yourusername/Smart-Traffic-Management-IoT.git
-# Install dependencies
-pip install -r requirements. txt
-# To run in Colab or local python
-python traffic_system.py
+2️⃣ Install dependencies
+pip install -r requirements.txt
+
+3️⃣ Run the app locally
+streamlit run smart_traffic_app.py
+
+4️⃣ Deploy on Streamlit Cloud
+Upload the repo to GitHub, then deploy via share.streamlit.io.
+
+🧩 Example Simulation
+| Lane 1 | Lane 2 | Lane 3 | Lane 4 | Avg Vehicles | Signal Decision                      |
+| :----: | :----: | :----: | :----: | :----------: | :----------------------------------- |
+|   15   |   99   |   48   |   89   |     62.75    | Moderate Traffic – Extend Green Time |
 
 
 
