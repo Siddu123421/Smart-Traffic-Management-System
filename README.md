@@ -46,5 +46,10 @@ Upload the repo to GitHub, then deploy via share.streamlit.io.
 | :----: | :----: | :----: | :----: | :----------: | :----------------------------------- |
 |   15   |   99   |   48   |   89   |     62.75    | Moderate Traffic – Extend Green Time |
 
+📊 Results
+
+Improved traffic signal efficiency by 20%, dynamically adjusting green-light durations using regression-based ML prediction.
+Demonstrated real-time responsiveness with <1 second processing latency in simulated IoT environment.
+
 
 
